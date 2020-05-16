@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:text="  Hello ! Create your account here : "
+        android:textColor="@color/textTitle"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView2"
+        android:id="@+id/layoutCreate">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Name : "
+                android:textStyle="bold"
+                android:textColor="@color/textInfo"
+                />
+            <EditText
+                android:id="@+id/etNameAdd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textColorHint="@color/colorHint"
+                android:textColor="@color/textEditable"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Mail : "
+                android:textStyle="bold"
+                android:textColor="@color/textInfo"
+                />
+            <EditText
+                android:id="@+id/etMailAdd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mail"
+                android:textColorHint="@color/colorHint"
+                android:textColor="@color/textEditable"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Password :"
+                android:textStyle="bold"
+                android:textColor="@color/textInfo"
+                />
+            <EditText
+                android:id="@+id/etPwdAdd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="your password"
+                android:textColorHint="@color/colorHint"
+                android:textColor="@color/textEditable"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Confirm your password :"
+                android:textStyle="bold"
+                android:textColor="@color/textInfo"
+                />
+            <EditText
+                android:id="@+id/etPwdAdd2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="your password"
+                android:textColorHint="@color/colorHint"
+                android:textColor="@color/textEditable"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/bCreateUser"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="51dp"
+                android:background="@color/backgroundButton"
+                android:text=" Create ! "
+                android:textColor="@color/textButton" />
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

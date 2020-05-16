@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMail"
+        android:hint="Mail"
+        android:text=""
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwvxyz1234567890@."
+        android:textColorHint="@color/colorHint"
+        android:textColor="@color/textEditable"
+        android:inputType="textEmailAddress"
+        android:layout_above="@+id/etPassword"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_alignStart="@+id/etPassword"
+        android:layout_alignRight="@+id/etPassword"
+        android:layout_alignEnd="@+id/etPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwvxyz1234567890"
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        android:textColorHint="@color/colorHint"
+        android:textColor="@color/textEditable"
+        android:inputType="textPassword"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:textColor="@color/textButton"
+        android:background="@color/backgroundButton"
+        android:id="@+id/bLogin"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  Veuillez entrer vos identifiants "
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:textColor="@color/textTitle"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/logotest"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:clickable="true"
+        android:textColor="@color/textInfo"
+        android:id="@+id/textCreateUser"
+        android:text="Create account"
+        android:layout_below="@+id/bLogin"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
